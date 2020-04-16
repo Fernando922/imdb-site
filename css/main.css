@@ -1,0 +1,317 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+a {
+  color: white;
+  margin: 0 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #e3bd01;
+}
+
+header {
+  background-image: url("../img/capa-madmax2.jpg");
+  background-attachment: fixed;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+header::after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 212, 255, 0) 75%
+  );
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 900px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  width: 950px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.header-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.header-user a {
+  color: white;
+  margin: 0 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header-user a:hover {
+  color: #e3bd01;
+}
+
+.header-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.movie-genres-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.movie-genres-list a {
+  margin: 0 20px 0 0;
+}
+
+.header-trailer {
+  align-self: flex-start;
+  margin: 40px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 100;
+  padding: 15px 10px 15px 30px;
+  border-radius: 20px;
+  background-color: #e3bd01;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-trailer:hover {
+  background-color: #bc9a1d;
+}
+
+#header-movie-info {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#header-movie-date {
+  color: #bc9a1d;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  width: 950px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 900px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-options li a {
+  color: #e3bd01;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.menu-options li a:hover {
+  border-bottom: 1px solid #e3bd01;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 950px;
+  list-style: none;
+  padding: 0;
+}
+
+.movies li {
+  border-radius: 8px;
+  width: 24%;
+  margin: 0 0 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+
+.movies div figure {
+  margin: 0;
+  flex: 1;
+}
+
+
+.movies div figure img {
+  border: 0;
+  width: 100%;
+}
+
+.description {
+  background-color: white;
+  padding: 10px;
+}
+
+.info {
+  height: 100px;
+  width: 100px;
+  background-color: #000;
+  display: flex;
+  position: absolute;
+  top:0
+}
+
+.info:hover{
+  visibility: visible;
+}
+
+.description h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.film-genre{
+  display: flex;
+  flex-direction: row;
+}
+
+.description a {
+  color: #e3bd01;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.rate i {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 24px;
+}
+
+.rate i:hover{
+  color: red
+}
+
+.rate p {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+}
+
+.content {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content figure {
+  margin: 0;
+}
+
+.container-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-icons i {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.twitter-icon i:hover {
+	color: #55acee;
+}
+
+.facebook-icon i:hover {
+	color: #3b5998;
+}
+
+.instagram-icon i:hover {
+	color: #e95950;
+}
